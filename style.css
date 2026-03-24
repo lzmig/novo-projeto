@@ -6,13 +6,18 @@ html {
 #about {
     scroll-margin-top: 1px;
 }
-
+.hero {
+    text-align: center;
+    padding: 100px 20px 40px;
+    color: white;
+}
 
 body {
     background: linear-gradient(130deg, #2c2c2c, #111);
     margin: 0;
     min-height: 120vh;
     font-family: sans-serif;
+     background-attachment: fixed;
 }
 
 .container {
@@ -22,6 +27,7 @@ body {
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 10px;
     color: #eee;
+    max-width: 900px;
 
 }
 
