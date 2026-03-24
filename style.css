@@ -1,0 +1,187 @@
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 140px;
+    scroll-padding-bottom: 140px;
+}
+#about {
+    scroll-margin-top: 1px;
+}
+
+
+body {
+    background: linear-gradient(130deg, #2c2c2c, #111);
+    margin: 0;
+    min-height: 120vh;
+    font-family: sans-serif;
+}
+
+.container {
+    max-width: 1500px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    color: #eee;
+
+}
+
+.container h1 {
+    font-size: 2.5em;
+    text-align: center;
+
+}
+
+.container p {
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.8;
+    font-size: 19px;
+}
+
+.header {
+    background-color: #333;
+
+}
+
+.header h1 {
+    color: white;
+    font-size: 2.5em;
+    margin: 10px;
+    margin-left: 20px;
+    padding: 10px;
+}
+.navbar {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: fit-content;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50px;
+    padding: 10px 30px;
+    z-index: 1000;
+
+}
+.navbar ul {
+    list-style: none;
+    margin: 0px;
+    padding: 10px 20px;
+    display: flex;
+    gap: 8px;
+
+
+
+}
+
+.navbar ul a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+
+}
+
+.navbar ul a {
+    color: white;
+    text-decoration: none;
+    position: relative;
+    padding: 6px 4px;
+    transition: color 0.3s ease;
+    letter-spacing: 0.5px;
+
+}
+
+
+.navbar ul a::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #888, transparent);
+    transition: width 0.4s ease;
+    border-radius: 2px;
+
+}
+
+.navbar ul a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.05);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+    border-radius: 4px;
+
+
+}
+
+.navbar ul a:hover {
+    color: white;
+
+}
+
+.navbar ul a:hover::after {
+    width: 100%;
+
+
+}
+
+.navbar ul a:hover::before {
+    transform: scaleX(1);
+
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 20px;
+}
+
+form input,
+form textarea {
+    background: rgba(255, 255, 255, 0.07);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 10px;
+    padding: 14px 18px;
+    color: white;
+    font-size: 1em;
+    outline: none;
+    transition: border 0.3s ease, background 0.3s ease;
+}
+
+form input::placeholder,
+form textarea::placeholder {
+    color: rgba(255, 255, 255, 0.4);
+}
+
+form input:focus,
+form textarea:focus {
+    border: 1px solid #0b8793;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+form button {
+    background: linear-gradient(135deg, #360033, #0b8793);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 14px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: opacity 0.3s ease, transform 0.2s ease;
+}
+form button:hover {
+    opacity: 0.85;
+    transform: translateY(-2px);
+}
+
+form button:active {
+    transform: translateY(0px);
+}
