@@ -19,8 +19,8 @@ body {
     font-family: sans-serif;
      background-attachment: fixed;
     box-shadow: 
-        0 0 40px rgba(68, 26, 66, 0.5),
-        0 0 80px rgba(51, 73, 75, 0.3);
+         0 0 40px rgba(44, 20, 43, 0.5),
+        0 0 80px rgba(66, 37, 75, 0.342);
 }
 
 .container {
@@ -32,8 +32,8 @@ body {
     color: #eee;
     max-width: 900px;
     box-shadow: 
-        0 0 40px rgba(68, 26, 66, 0.5),
-        0 0 80px rgba(51, 73, 75, 0.3);
+        0 0 40px rgba(44, 20, 43, 0.5),
+        0 0 80px rgba(66, 37, 75, 0.342);
 
 }
 
