@@ -18,6 +18,9 @@ body {
     min-height: 120vh;
     font-family: sans-serif;
      background-attachment: fixed;
+    box-shadow: 
+        0 0 40px rgba(68, 26, 66, 0.5),
+        0 0 80px rgba(51, 73, 75, 0.3);
 }
 
 .container {
@@ -28,6 +31,9 @@ body {
     border-radius: 10px;
     color: #eee;
     max-width: 900px;
+    box-shadow: 
+        0 0 40px rgba(68, 26, 66, 0.5),
+        0 0 80px rgba(51, 73, 75, 0.3);
 
 }
 
